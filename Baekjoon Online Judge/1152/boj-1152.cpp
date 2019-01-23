@@ -1,5 +1,5 @@
 /*
-	Copyright(c) 2019. Minho Cheon. All rights reserved.
+    Copyright(c) 2019. Minho Cheon. All rights reserved.
 */
 
 #include <iostream>
@@ -11,8 +11,8 @@ int cnt;
 string str;
 
 int main() {
-	while (cin >> str) {
-		++cnt;
-	}
-	cout << cnt << endl;
+    while (cin >> str) {
+        ++cnt;
+    }
+    cout << cnt << endl;
 }
