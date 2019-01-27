@@ -11,7 +11,6 @@ int n;
 string str[51];
 
 int main() {
-    freopen("input.txt", "r", stdin);
     cin >> n;
     for (int i = 0 ; i < n ; ++i) {
         cin >> str[i];

@@ -14,7 +14,6 @@ int getGcd(int a, int b) {
 }
 
 int main() {
-    freopen("input.txt", "r", stdin);
     int t;
     cin >> t;
 
