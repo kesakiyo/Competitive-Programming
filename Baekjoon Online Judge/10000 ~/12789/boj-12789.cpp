@@ -7,19 +7,23 @@
 
 using namespace std;
 
-int main() {
-	int n, val, order = 1;
-	stack<int> s;
+int n, v;
+stack<int> s;
 
+int main() {
+	freopen("input.txt", "r", stdin);
 	cin >> n;
-	for (int i = 1 ; i <= n ; ++i) {
-		cin >> val;
-		s.push(val);
-		while (!s.empty() && s.top() == order) {
+
+	int cur = 1;
+	while (n--) {
+		cin >> v;
+		s.push(v);
+
+		while (!s.empty() && s.top() == cur) {
+			++cur;
 			s.pop();
-			++order;
 		}
 	}
 
-	cout << (order == n + 1 ? "Nice" : "Sad") << endl;
+	cout << (s.empty() ? "Nice" : "Sad") << endl;
 }
